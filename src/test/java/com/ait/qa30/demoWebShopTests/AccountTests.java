@@ -10,7 +10,8 @@ public class AccountTests extends TestBase {
     @BeforeMethod
       public void ensurePrecondition() {
         if (!isElementPresent(By.cssSelector("[href='/register']"))){
-            click(By.cssSelector(".header [href='/customer/info']"));
+            click(By.cssSelector("[href='/logout']"));
+            //click(By.cssSelector(".header [href='/customer/info']"));
         }
     }
     @Test

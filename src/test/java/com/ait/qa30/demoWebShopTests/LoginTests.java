@@ -10,7 +10,8 @@ public class LoginTests extends TestBase{
     @BeforeMethod
     public void precondition(){
         if (!isElementPresent(By.cssSelector("[href='/login']"))){
-            click(By.cssSelector(".header [href='/customer/info']"));
+            click(By.cssSelector("[class='button-1 login-button']"));
+            //click(By.cssSelector(".header [href='/customer/info']"));
         }
         click(By.cssSelector("[href='/register']"));
         type(By.name("FirstName"), "Natalie");
